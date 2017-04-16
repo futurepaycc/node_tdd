@@ -3,13 +3,17 @@
   "version": "0.1.1",
   "scripts": {
     "hs": "cd public && hs -p 8080",
-    "start": "node --harmony_async_await server.js"
-    // "migrate": "node node_modules/db-migrate/bin/db-migrate --config migrations/database.json --env test"
+    "start": "node --harmony_async_await server.js",
+    "test": "node_modules/mocha/bin/mocha --harmony"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
     "bookshelf": "^0.10.3",
     "knex": "^0.12.9",
-    "mocha": "^3.2.0",
     "restify": "^4.3.0",
     "sqlite3": "^3.1.8"
   }

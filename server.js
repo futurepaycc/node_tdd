@@ -13,3 +13,5 @@ server.listen(SERVER_PORT,function(){
 server.use(restify.bodyParser({ mapParams: false }))
 
 require('./controller.js')(server)
+
+module.exports = server
