@@ -3,11 +3,14 @@
   "version": "0.1.1",
   "scripts": {
     "hs": "cd public && hs -p 8080",
-    "start": "node --harmony_async_await server.js"
+    "start": "node --harmony_async_await server.js",
+    "migrate":"node node_modules/db-migrate/bin/db-migrate --config migrations/database.json"
   },
   "devDependencies": {
     "bookshelf": "^0.10.3",
+    "db-migrate": "^0.10.0-beta.20",
     "knex": "^0.12.9",
+    "mocha": "^3.2.0",
     "restify": "^4.3.0",
     "sqlite3": "^3.1.8"
   }
