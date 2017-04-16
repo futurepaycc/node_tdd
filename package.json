@@ -1,6 +1,6 @@
 {
     "name":"hello1",
     "scripts":{
-        "start":"hs"
+        "start":"hs -p 8080"
     }
 }
