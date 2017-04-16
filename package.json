@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "scripts": {
     "hs": "cd public && hs -p 8080",
-    "start":"node --harmony-async-await server.js"
+    "start":"node --harmony_async_await server.js"
   },
   "devDependencies": {
     "bookshelf": "^0.10.3",
