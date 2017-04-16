@@ -28,8 +28,7 @@ describe('user tests', function () {
     describe('GET /hello', function () {
         it('should return all shows', async function () {
             let res = await chai.request(server).get('/hello')
-            console.log(res.body)
-            console.log(typeof res.body)
+            res.body.result.should.equal(true)
         })
     })
 
