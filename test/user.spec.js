@@ -4,7 +4,6 @@ process.env.NODE_ENV = 'dev'
 
 let chai = require('chai')
 let chaiHttp = require('chai-http')
-chai.use(chaiHttp)
 let server = require('../server')
 
 
@@ -12,6 +11,8 @@ let config = require('../knexfile.js')[process.env.NODE_ENV];
 
 let knex = require('knex')(config)
 
+chai.use(chaiHttp)
+let should = chai.should()
 
 describe('user tests', function () {
 
