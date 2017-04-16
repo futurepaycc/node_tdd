@@ -11,5 +11,5 @@ server.get('/hello',function(req,res){
 })
 
 server.listen(SERVER_PORT,function(){
-    console.log(`server start up at ${SERVER_PORT}`)
+    console.log(`server start up at http://localhost:${SERVER_PORT}`)
 })
