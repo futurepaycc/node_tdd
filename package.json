@@ -4,7 +4,7 @@
   "scripts": {
     "hs": "cd public && hs -p 8080",
     "start": "node --harmony_async_await server.js",
-    "test": "node_modules/mocha/bin/mocha --harmony"
+    "test": "node_modules/mocha/bin/mocha --harmony -t 20000"
   },
   "devDependencies": {
     "chai": "^3.5.0",
