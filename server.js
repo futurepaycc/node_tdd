@@ -1,16 +1,15 @@
-function fib(n){
-    if(n<4) return n;
-    return fib(n-1) + fib(n-2)
-}
+"use strict"
 
-function load(){
-    console.log("hello world");
-    console.log("这个代码编辑器还不错");
-}
+const SERVER_PORT = 8080
 
-//这里的程序如何debug?
-function runFib(){
-    for(i=0;i<100;i++){
-        console.log(i+"---"+fib(i))
-    }
-}
+let restify = require('restify')
+
+let server = restify.createServer()
+
+server.get('/hello',function(req,res){
+    res.send({result:true,msg:'success'})
+})
+
+server.listen(SERVER_PORT,function(){
+    console.log(`server start up at ${SERVER_PORT}`)
+})
