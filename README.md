@@ -21,3 +21,7 @@
 4. knex seed:make insert_user_data --env dev 默认在seeds目录下生成测试数据文件
 5. knex seed:run --env dev  执行种子文件
 6. npm test  启动功能测试
+
+### 测试用例的debug方式
+1. npm run test_debug
+2. vscode debug模式选择attach, F5

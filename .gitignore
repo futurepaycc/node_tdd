@@ -1,6 +1,7 @@
 .*
 npm-debug.log*
 !.gitignore
+!.vscode/
 db_dev
 dev.sqlite3
 node_modules/
