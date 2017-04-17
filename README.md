@@ -6,8 +6,8 @@
 
 ### 注意事项
 1. 特殊安装问题(全局安装、源码安装、cnpm安装出问题的)
-npm install -D sqlite3 --build-from-source
-cnpm install knex -g
+* npm install -D sqlite3 --build-from-source
+* cnpm install knex -g
 
 ### TODO事项
 1. 完善日志方案
@@ -20,3 +20,5 @@ cnpm install knex -g
 4. knex seed:make insert_user_data --env dev 默认在seeds目录下生成测试数据文件
 5. knex seed:run --env dev  执行种子文件
 6. npm test  启动功能测试
+
+### 查看仓库迁移结果
