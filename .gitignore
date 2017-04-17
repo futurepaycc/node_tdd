@@ -1,4 +1,5 @@
 .*
+npm-debug.log*
 !.gitignore
 db_dev
 dev.sqlite3

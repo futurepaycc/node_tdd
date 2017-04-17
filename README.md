@@ -5,9 +5,10 @@
 4. 下一步可考虑将这个项目变成公开项目
 
 ### 注意事项
-1. 特殊安装问题(全局安装、源码安装、cnpm安装出问题的)
-* npm install -D sqlite3 --build-from-source
+1. 安装依赖步骤
+* npm install sqlite3 --build-from-source
 * cnpm install knex -g
+* cnpm install 
 
 ### TODO事项
 1. 完善日志方案
