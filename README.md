@@ -20,5 +20,3 @@
 4. knex seed:make insert_user_data --env dev 默认在seeds目录下生成测试数据文件
 5. knex seed:run --env dev  执行种子文件
 6. npm test  启动功能测试
-
-### 查看仓库迁移结果
