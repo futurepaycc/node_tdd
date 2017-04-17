@@ -10,10 +10,6 @@
 * cnpm install knex -g
 * cnpm install 
 
-### TODO事项
-1. 完善日志方案
-2. 完善环境切换方案(主要是配置文件分离)
-
 ### 数据据迁移使用方案
 1. knex init 生成knexfile.js，修改之
 2. knex migrate:make create_user_table 会默认在migration目录下生成迁移文件
@@ -25,3 +21,8 @@
 ### 测试用例的debug方式
 1. npm run test_debug
 2. vscode debug模式选择attach, F5
+
+### TODO事项
+1. 完善日志方案
+2. 完善环境切换方案(主要是配置文件分离)
+3. 熟悉knex之migration相关的api,用来做自动化功能测试
