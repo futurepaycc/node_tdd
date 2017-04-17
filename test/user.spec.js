@@ -14,6 +14,11 @@ let knex = require('knex')(config)
 chai.use(chaiHttp)
 let should = chai.should()
 
+async function tryCatch(promise) {
+    try { return await promise }
+    catch (e) { return e }
+}
+
 describe('user tests', function () {
 
     beforeEach(async function () {
@@ -34,19 +39,12 @@ describe('user tests', function () {
     })
 
     describe('POST /login', function () {
-        it('login should sucess', async function () {
-            try {
-                let res = await chai.request(server).post('/login').send({ 'name': 'liunix', 'password': '123456' })
-                // console.log('res=',res)
-                // console.log('res.body=',res.body)
-                // res.body.result.should.equal(true)
-                // let res = await chai.request(server).post('/login').field('_method', 'put').field('name','liunix').field('password','123456')
-                // res.body.result.should.equal(true)
-                console.log(res)
-            } catch (err) {
-                console.log(err)
-            }
+
+        it('login should success', async () => {
+            let res = await chai.request(server).post('/login').send({ name: 'liunix', password: '123456' })
+            res.body.result.should.equal(true)
         })
+
     })
 
 })

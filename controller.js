@@ -1,20 +1,16 @@
 'use strict'
 
-const NEED_PARSE_JSON = true
 let service = require('./service.js')
 
 module.exports = function (server) {
+    //测试接口
     server.get('/hello', function (req, res) {
         res.send({ result: true, msg: 'success' })
     })
+    //登录接口
     server.post('/login',async function(req,res){
-        let reqObj = {}
-        if(NEED_PARSE_JSON){/**/
-            reqObj = JSON.parse(req.body)
-        }
-        // res.send(req.body)
+        let reqObj = req.body
         let result  = await service.findUserByNamePassword(reqObj.name,reqObj.password)
-
         if(result && result.attributes){
             res.send({result:true,msg:'登录成功'})
         }else{

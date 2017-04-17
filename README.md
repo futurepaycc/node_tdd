@@ -7,7 +7,6 @@
 ### 注意事项
 1. 特殊安装问题(全局安装、源码安装、cnpm安装出问题的)
 npm install -D sqlite3 --build-from-source
---npm install db-migrate-sqlite3 -D
 cnpm install knex -g
 
 ### TODO事项
